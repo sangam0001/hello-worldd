@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="jquery.js"></script>
+        <script src="jquery-ui.css"></script>
+        <script src="jquery-ui.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("#b1").click(function()
+                {
+                    $("#id1").hide();
+                });
+                $("#b2").click(function()
+                {
+                    $("#id1").show();
+                });
+                $("#b3").click(function()
+                {
+                    $("#id1").toggle();
+                });
+                $("#b4").click(function()
+                {
+                    $("#id1").animate({left:'550px'});
+                });
+                $("#b5").click(function()
+                {
+                    $("#id1").css("color", "green").slideUp(3000).slideDown(3000);
+                });
+            });
+        </script>
+        <style>
+            #id1
+            {
+                height: 500px;
+                width: 500px;
+                background-color: blanchedalmond;
+                border: solid;
+                position: relative;
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="id1"></div><br>
+        <button id="b1">Hide</button>
+        <button id="b2">Show</button>
+        <button id="b3">Toggle</button>
+        <button id="b4">Animation</button>
+        <button id="b5">Chaining</button>
+        <button id="b6">SlideUp</button>
+        <button id="b7">SlideDown</button>
+        <button id="b8">FadeIn</button>
+        <button id="b9">FadeOut</button>
+
+    </body>
+</html> 
